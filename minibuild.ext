@@ -1,0 +1,8 @@
+ext_type = 'post-build'
+ext_name = 'cadata-reparse'
+
+ext_call_type = 'interpreter'
+
+ext_vars_required = ['OS_SEP', 'DIR_HERE', 'BUILDSYS_TARGET_OBJ_NOARCH_DIR']
+
+ext_call_cmdline = '{DIR_HERE}{OS_SEP}reparse.py --source {BUILDSYS_TARGET_OBJ_NOARCH_DIR}{OS_SEP}certdata-original.pem --output {BUILDSYS_TARGET_OBJ_NOARCH_DIR}{OS_SEP}certdata.pem'
